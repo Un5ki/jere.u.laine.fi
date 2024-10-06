@@ -12,12 +12,6 @@
             margin: 0;
             padding: 0;
         }
-        .container {
-            width: 90%;
-            margin: 0 auto;
-            border: 5px solid #25283D; /* Space cadet */
-            padding: 2%;
-        }
         .navbar {
             width: 100%; /* Full width */
             height: 60px;
@@ -29,6 +23,13 @@
             align-items: center;
             justify-content: center;
         }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            border: 5px solid #25283D; /* Space cadet */
+            padding: 2%;
+            box-sizing: border-box; /* Ensures padding is included in the width */
+        }
         h1, h2, h3, h4, h5, h6 {
             font-weight: bold;
             font-size: 14px;
@@ -36,6 +37,15 @@
         p {
             font-weight: 300;
             font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                font-size: 24px; /* Smaller font size for smaller screens */
+            }
+            .container {
+                width: 95%; /* Slightly wider on smaller screens */
+                padding: 1%;
+            }
         }
     </style>
 </head>
