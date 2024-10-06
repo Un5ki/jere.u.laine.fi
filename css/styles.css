@@ -1,103 +1,102 @@
- body {
-            background-color: #FCF4F4; /* Snow */
-            font-family: 'Oxygen', sans-serif;
-            color: #000000; /* Default text color */
-            margin: 0;
-            padding: 0;
-        }
-        .navbar {
-            width: 100%; /* Full width */
-            height: 60px;
-            background-color: #7D8CC4; /* Glaucous */
-            border-bottom: 1px solid #25283D; /* Space cadet */
-            color: #FCF4F4; /* Snow */
-            font-size: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Oxygen', sans-serif; /* Apply Oxygen font to navbar */
-        }
-        .navbar a {
-            color: #FCF4F4; /* Snow */
-            text-decoration: none;
-            padding: 14px 20px;
-            font-family: 'Oxygen', sans-serif; /* Apply Oxygen font to navbar links */
-        }
-        .navbar a:hover {
-            background-color: #25283D; /* Space cadet */
-            color: #FCF4F4; /* Snow */
-        }
-        .container {
-            width: 90%;
-            margin: 0 auto;
-            border: 5px solid #25283D; /* Space cadet */
-            padding: 2%;
-            box-sizing: border-box; /* Ensures padding is included in the width */
-        }
-        .profile-pic {
-            float: right;
-            margin: 0 0 500px 500px;
-            width: 400px; /* Voit muuttaa leveyttä tarpeen mukaan */
-            height: auto; /* Säilyttää kuvasuhteen */
-         } 
-        .image-caption { display: inline-block; vertical-align: top;
-        }
-        .image-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Centers the image and caption horizontally */
-            margin: 20px 0; /* Adds some margin around the image */
-        }
-        .responsive-image {
-            max-width: 100%;
-            height: auto;
-        }
-        .image-caption {
-            margin-top: 10px; /* Adds some space above the caption */
-            font-size: 14px;
-            color: #25283D; /* Space cadet */
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: bold;
-            font-size: 14px;
-        }
-        p {
-            font-weight: 300;
-            font-size: 14px;
-        }
+body {
+    background-color: #FCF4F4; /* Snow */
+    font-family: 'Oxygen', sans-serif;
+    color: #000000; /* Default text color */
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    width: 100%; /* Full width */
+    height: 60px;
+    background-color: #7D8CC4; /* Glaucous */
+    border-bottom: 1px solid #25283D; /* Space cadet */
+    color: #FCF4F4; /* Snow */
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oxygen', sans-serif; /* Apply Oxygen font to navbar */
+}
+.navbar a {
+    color: #FCF4F4; /* Snow */
+    text-decoration: none;
+    padding: 14px 20px;
+    font-family: 'Oxygen', sans-serif; /* Apply Oxygen font to navbar links */
+}
+.navbar a:hover {
+    background-color: #25283D; /* Space cadet */
+    color: #FCF4F4; /* Snow */
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    border: 5px solid #25283D; /* Space cadet */
+    padding: 2%;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+.profile-pic {
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 400px; /* Voit muuttaa leveyttä tarpeen mukaan */
+    height: auto; /* Säilyttää kuvasuhteen */
+}
+.image-caption {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    color: #25283D; /* Space cadet */
+}
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the image and caption horizontally */
+    margin: 20px 0; /* Adds some margin around the image */
+}
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-size: 14px;
+}
+p {
+    font-weight: 300;
+    font-size: 14px;
+}
 
-        /* Media queries for responsiveness */
-        @media (max-width: 1024px) {
-            .navbar {
-                font-size: 26px; /* Smaller font size for tablets */
-            }
-            .container {
-                width: 95%; /* Slightly wider on tablets */
-                padding: 1.5%;
-            }
-        }
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    .navbar {
+        font-size: 26px; /* Smaller font size for tablets */
+    }
+    .container {
+        width: 95%; /* Slightly wider on tablets */
+        padding: 1.5%;
+    }
+}
 
-        @media (max-width: 768px) {
-            .navbar {
-                font-size: 24px; /* Smaller font size for smaller screens */
-                flex-direction: column; /* Stack links vertically */
-                height: auto;
-            }
-            .navbar a {
-                padding: 10px 0; /* Adjust padding for vertical layout */
-            }
-            .container {
-                width: 95%; /* Slightly wider on smaller screens */
-                padding: 1%;
-            }
-        }
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 24px; /* Smaller font size for smaller screens */
+        flex-direction: column; /* Stack links vertically */
+        height: auto;
+    }
+    .navbar a {
+        padding: 10px 0; /* Adjust padding for vertical layout */
+    }
+    .container {
+        width: 95%; /* Slightly wider on smaller screens */
+        padding: 1%;
+    }
+}
 
-        @media (max-width: 480px) {
-            .navbar {
-                font-size: 20px; /* Even smaller font size for phones */
-            }
-            .container {
-                width: 100%; /* Full width on phones */
-                padding: 0.5%;
-            }
-        }
+@media (max-width: 480px) {
+    .navbar {
+        font-size: 20px; /* Even smaller font size for phones */
+    }
+    .container {
+        width: 100%; /* Full width on phones */
+        padding: 0.5%;
+    }
+}
