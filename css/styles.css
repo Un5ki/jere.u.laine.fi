@@ -1,4 +1,4 @@
-body {
+ody {
     background-color: #FCF4F4; /* Snow */
     font-family: 'Oxygen', sans-serif;
     color: #000000; /* Default text color */
@@ -31,6 +31,21 @@ body {
     border: 5px solid #25283D; /* Space cadet */
     padding: 2%;
     box-sizing: border-box; /* Ensures padding is included in the width */
+}
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the image and caption horizontally */
+    margin: 20px 0; /* Adds some margin around the image */
+}
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+.image-caption {
+    margin-top: 10px; /* Adds some space above the caption */
+    font-size: 14px;
+    color: #25283D; /* Space cadet */
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
