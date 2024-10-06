@@ -36,7 +36,7 @@
         }
         .profile-pic {
             float: right;
-            margin: 0 0 50px 100px;
+            margin: 0 0 50px 500px;
             width: 500px; /* Voit muuttaa leveyttä tarpeen mukaan */
             height: auto; /* Säilyttää kuvasuhteen */
         }
