@@ -35,7 +35,7 @@ body {
     box-sizing: border-box; /* Ensures padding is included in the width */
 }
 .profile-pic {
-    float: left;
+    float: right;
     margin: 0 20px 20px 0;
     width: 400px; /* Voit muuttaa leveyttä tarpeen mukaan */
     height: auto; /* Säilyttää kuvasuhteen */
