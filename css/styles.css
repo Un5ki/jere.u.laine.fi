@@ -34,6 +34,12 @@ body {
     padding: 2%;
     box-sizing: border-box; /* Ensures padding is included in the width */
 }
+.profile-pic {
+    float: right;
+    margin: 0 0 10px 10px;
+    width: 150px; /* Voit muuttaa leveyttä tarpeen mukaan */
+    height: auto; /* Säilyttää kuvasuhteen */
+}
 .image-container {
     display: flex;
     flex-direction: column;
