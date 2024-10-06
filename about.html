@@ -6,6 +6,124 @@
     <title>Tietoja minusta - Jere U. Laine</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: #FCF4F4; /* Snow */
+            font-family: 'Oxygen', sans-serif;
+            color: #000000; /* Default text color */
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            width: 100%; /* Full width */
+            height: 60px;
+            background-color: #7D8CC4; /* Glaucous */
+            border-bottom: 1px solid #25283D; /* Space cadet */
+            color: #FCF4F4; /* Snow */
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Oxygen', sans-serif; /* Apply Oxygen font to navbar */
+        }
+        .navbar a {
+            color: #FCF4F4; /* Snow */
+            text-decoration: none;
+            padding: 14px 20px;
+            font-family: 'Oxygen', sans-serif; /* Apply Oxygen font to navbar links */
+        }
+        .navbar a:hover {
+            background-color: #25283D; /* Space cadet */
+            color: #FCF4F4; /* Snow */
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            border: 5px solid #25283D; /* Space cadet */
+            padding: 2%;
+            box-sizing: border-box; /* Ensures padding is included in the width */
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        .text-content {
+            flex: 1;
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centers the image and caption horizontally */
+            margin-left: 20px; /* Adds some margin to the left of the image */
+        }
+        .profile-pic {
+            width: 400px; /* Voit muuttaa leveyttä tarpeen mukaan */
+            height: auto; /* Säilyttää kuvasuhteen */
+        }
+        .image-caption {
+            margin-top: 10px; /* Adds some space above the caption */
+            font-size: 14px;
+            color: #25283D; /* Space cadet */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        p {
+            font-weight: 300;
+            font-size: 14px;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 1024px) {
+            .navbar {
+                font-size: 26px; /* Smaller font size for tablets */
+            }
+            .container {
+                width: 95%; /* Slightly wider on tablets */
+                padding: 1.5%;
+                flex-direction: column;
+            }
+            .image-container {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                font-size: 24px; /* Smaller font size for smaller screens */
+                flex-direction: column; /* Stack links vertically */
+                height: auto;
+            }
+            .navbar a {
+                padding: 10px 0; /* Adjust padding for vertical layout */
+            }
+            .container {
+                width: 95%; /* Slightly wider on smaller screens */
+                padding: 1%;
+                flex-direction: column;
+            }
+            .image-container {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar {
+                font-size: 20px; /* Even smaller font size for phones */
+            }
+            .container {
+                width: 100%; /* Full width on phones */
+                padding: 0.5%;
+                flex-direction: column;
+            }
+            .image-container {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="navbar">
@@ -16,72 +134,67 @@
         <a href="contact.html">Yhteydenotto</a>
     </div>
     <div class="container">
-        <h1>Jere Laine - Ansioluettelo</h1>
+        <div class="text-content">
+            <h1>Jere Laine - Ansioluettelo</h1>
+            <h3>Työkokemus</h3>
+            <ul>
+                <li><strong>Talousjohtaja, Vihdin kunta</strong> (6/2021 – nykyhetki)
+                    <ul>
+                        <li>Kunnan talouden ja rahoituksen suunnittelu</li>
+                        <li>Talousarvion ja tilinpäätöksen valmistelu</li>
+                        <li>Maksuvalmiuden hoito ja talouden seuranta</li>
+                        <li>Esihenkilönä talouspalveluille</li>
+                        <li>Johtoryhmän jäsen ja hallintojohtajan sijainen</li>
+                    </ul>
+                </li>
+                <li><strong>Talouspäällikkö, Juuan kunta</strong> (10/2019 – 6/2021)
+                    <ul>
+                        <li>Kunnan talouden, rahoituksen ja maksuliikenteen hoito</li>
+                        <li>Johtoryhmän jäsen ja hallintojohtajan sijainen</li>
+                        <li>Toimitusjohtajana Juuan Kaukolämpö Oy:ssä</li>
+                    </ul>
+                </li>
+                <li><strong>Taloussuunnittelija, Nurmijärven kunta</strong> (2-10/2019)
+                    <ul>
+                        <li>Projektiluontoiset tehtävät, kuten talouden tasapainotusohjelman painelaskelmamatriisin teko</li>
+                    </ul>
+                </li>
+                <li><strong>Hallintosuunnittelija, Liperin kunta</strong> (7/2017 – 1/2019)
+                    <ul>
+                        <li>Johtoryhmän sihteeri ja avustavat valmistelut johtaville viranhaltijoille</li>
+                    </ul>
+                </li>
+                <li><strong>Kunnallisharjoittelija, Liperin kunta</strong> (4-7/2017)
+                    <ul>
+                        <li>Valtuusto- ja kunnanhallituskyselyn valmistelu</li>
+                    </ul>
+                </li>
+                <li><strong>Asiantuntija, Pirkanmaan TE-toimisto</strong> (8-9/2016)
+                    <ul>
+                        <li>Työntekijöiden oleskelulupapäätökset ja asiakasneuvonta</li>
+                    </ul>
+                </li>
+            </ul>
+       
+            <h3>Koulutus</h3>
+            <ul>
+                <li><strong>HTM (kunta- ja aluejohtaminen), Tampereen Yliopisto</strong> (2019)</li>
+                <li><strong>Erasmus vaihto-opiskelija, Leuvenin yliopisto, Belgia</strong> (2-6/2016)</li>
+                <li><strong>Ylioppilas, Jämsän Lukio</strong> (2010)</li>
+            </ul>
 
-        <div class="image-container">
-            <img src="images/Kuva2.jpg" alt="Kuva: Sami Lamberg, Kapina" class="profile-pic">
-            <div class="image-caption">Kuva: Sami Lamberg, Kapina</div>
-        </div>
-        
-        <h3>Työkokemus</h3>
-        <ul>
-            <li><strong>Talousjohtaja, Vihdin kunta</strong> (6/2021 – nykyhetki)
-                <ul>
-                    <li>Kunnan talouden ja rahoituksen suunnittelu</li>
-                    <li>Talousarvion ja tilinpäätöksen valmistelu</li>
-                    <li>Maksuvalmiuden hoito ja talouden seuranta</li>
-                    <li>Esihenkilönä talouspalveluille</li>
-                    <li>Johtoryhmän jäsen ja hallintojohtajan sijainen</li>
-                </ul>
-            </li>
-            <li><strong>Talouspäällikkö, Juuan kunta</strong> (10/2019 – 6/2021)
-                <ul>
-                    <li>Kunnan talouden, rahoituksen ja maksuliikenteen hoito</li>
-                    <li>Johtoryhmän jäsen ja hallintojohtajan sijainen</li>
-                    <li>Toimitusjohtajana Juuan Kaukolämpö Oy:ssä</li>
-                </ul>
-            </li>
-            <li><strong>Taloussuunnittelija, Nurmijärven kunta</strong> (2-10/2019)
-                <ul>
-                    <li>Projektiluontoiset tehtävät, kuten talouden tasapainotusohjelman painelaskelmamatriisin teko</li>
-                </ul>
-            </li>
-            <li><strong>Hallintosuunnittelija, Liperin kunta</strong> (7/2017 – 1/2019)
-                <ul>
-                    <li>Johtoryhmän sihteeri ja avustavat valmistelut johtaville viranhaltijoille</li>
-                </ul>
-            </li>
-            <li><strong>Kunnallisharjoittelija, Liperin kunta</strong> (4-7/2017)
-                <ul>
-                    <li>Valtuusto- ja kunnanhallituskyselyn valmistelu</li>
-                </ul>
-            </li>
-            <li><strong>Asiantuntija, Pirkanmaan TE-toimisto</strong> (8-9/2016)
-                <ul>
-                    <li>Työntekijöiden oleskelulupapäätökset ja asiakasneuvonta</li>
-                </ul>
-            </li>
-        </ul>
-   
-        <h3>Koulutus</h3>
-        <ul>
-            <li><strong>HTM (kunta- ja aluejohtaminen), Tampereen Yliopisto</strong> (2019)</li>
-            <li><strong>Erasmus vaihto-opiskelija, Leuvenin yliopisto, Belgia</strong> (2-6/2016)</li>
-            <li><strong>Ylioppilas, Jämsän Lukio</strong> (2010)</li>
-        </ul>
+            <h3>Luottamustehtävät</h3>
+            <ul>
+                <li><strong>Hallituksen jäsen, Nummelan Aluelämpö Oy</strong> (2/2023 - nykyhetki)</li>
+                <li><strong>Hallituksen jäsen, Juuan Vuokratalot Oy</strong> (6/2020 – 9/2021)</li>
+            </ul>
 
-        <h3>Luottamustehtävät</h3>
-        <ul>
-            <li><strong>Hallituksen jäsen, Nummelan Aluelämpö Oy</strong> (2/2023 - nykyhetki)</li>
-            <li><strong>Hallituksen jäsen, Juuan Vuokratalot Oy</strong> (6/2020 – 9/2021)</li>
-        </ul>
-
-        <h3>Erityisosaamiset</h3>
-        <ul>
-            <li>Talouden ja rahoituksen tasapainotuslaskelmat</li>
-            <li>Kustannuslaskenta</li>
-            <li>Luotettavan tiedon prosessointi</li>
-        </ul>
+            <h3>Erityisosaamiset</h3>
+            <ul>
+                <li>Talouden ja rahoituksen tasapainotuslaskelmat</li>
+                <li>Kustannuslaskenta</li>
+                <li>Luotettavan tiedon prosessointi</li>
+            </ul>
 
         <h3>Muut tehtävät</h3>
         <ul>
