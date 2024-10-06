@@ -40,12 +40,39 @@ p {
     font-weight: 300;
     font-size: 14px;
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    .navbar {
+        font-size: 26px; /* Smaller font size for tablets */
+    }
+    .container {
+        width: 95%; /* Slightly wider on tablets */
+        padding: 1.5%;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar {
         font-size: 24px; /* Smaller font size for smaller screens */
+        flex-direction: column; /* Stack links vertically */
+        height: auto;
+    }
+    .navbar a {
+        padding: 10px 0; /* Adjust padding for vertical layout */
     }
     .container {
         width: 95%; /* Slightly wider on smaller screens */
         padding: 1%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        font-size: 20px; /* Even smaller font size for phones */
+    }
+    .container {
+        width: 100%; /* Full width on phones */
+        padding: 0.5%;
     }
 }
