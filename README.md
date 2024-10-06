@@ -11,8 +11,8 @@
         Navigointipalkki
     </div>
     <div class="container">
-        <h1>Otsikko</h1>
-        <p>Leipäteksti alkaa tästä. Tämä on esimerkki siitä, miltä teksti näyttää määritellyillä tyyleillä.</p>
+        <h1>Tervetuloa</h1>
+        <p>Olen iloinen, että löysit tiesi sivuilleni. Täältä löydät tietoa minusta, blogini uusimmat kirjoitukset sekä kattavan esittelyn tarjoamistani palveluista.</p>
     </div>
 </body>
 </html>
