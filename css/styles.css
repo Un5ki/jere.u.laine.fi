@@ -16,6 +16,15 @@ body {
     align-items: center;
     justify-content: center;
 }
+.navbar a {
+    color: #FCF4F4; /* Snow */
+    text-decoration: none;
+    padding: 14px 20px;
+}
+.navbar a:hover {
+    background-color: #25283D; /* Space cadet */
+    color: #FCF4F4; /* Snow */
+}
 .container {
     width: 90%;
     margin: 0 auto;
