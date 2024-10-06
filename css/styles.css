@@ -39,6 +39,8 @@
             margin: 0 0 500px 500px;
             width: 400px; /* Voit muuttaa leveyttä tarpeen mukaan */
             height: auto; /* Säilyttää kuvasuhteen */
+         } 
+        .image-caption { display: inline-block; vertical-align: top;
         }
         .image-container {
             display: flex;
