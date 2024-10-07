@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .navbar {
     width: 100%; /* Full width */
     height: 60px;
@@ -17,56 +18,91 @@ body {
     justify-content: center;
     font-family: 'Oxygen', sans-serif; /* Apply Oxygen font to navbar */
 }
+
 .navbar a {
     color: #FCF4F4; /* Snow */
     text-decoration: none;
     padding: 14px 20px;
     font-family: 'Oxygen', sans-serif; /* Apply Oxygen font to navbar links */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .navbar a:hover {
     background-color: #25283D; /* Space cadet */
     color: #FCF4F4; /* Snow */
 }
+
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 90%;
     margin: 0 auto;
     border: 5px solid #25283D; /* Space cadet */
     padding: 2%;
     box-sizing: border-box; /* Ensures padding is included in the width */
 }
+
 .container::after {
     content: "";
     display: table;
     clear: both;
 }
+
 .profile-pic {
     float: right;
     margin: 0 20px 20px 0;
-    width: 200px; /* Voit muuttaa leveyttä tarpeen mukaan */
+    width: 100%;
+    max-width: 200px; /* Voit muuttaa leveyttä tarpeen mukaan */
     height: auto; /* Säilyttää kuvasuhteen */
 }
+
 .image-caption {
     display: inline-block;
     vertical-align: top;
     font-size: 14px;
     color: #25283D; /* Space cadet */
 }
+
 .image-container {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers the image and caption horizontally */
     margin: 20px 0; /* Adds some margin around the image */
 }
+
 .responsive-image {
     max-width: 100%;
     height: auto;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    font-size: 14px;
+
+h1 {
+    font-size: 32px;
 }
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
 p {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
 }
 
