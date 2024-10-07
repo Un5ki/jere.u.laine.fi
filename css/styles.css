@@ -77,6 +77,10 @@ body {
     height: auto;
 }
 
+.centered-text {
+    text-align: center;
+}
+
 h1 {
     font-size: 32px;
 }
