@@ -22,7 +22,7 @@
     </div>
     <script>
         const posts = [
-            { title: "Tervetuloa Blogiini", date: "5.1.2025", content: "Tämä on ensimmäinen blogipostaus..." },
+            { title: "Tervetuloa Blogiini", date: "5.1.2025", content: "Tämä on ensimmäinen blogipostaus...", link: "blogipostaukset/postaus1.html" },
             // Lisää tähän muut blogipostaukset
         ];
 
@@ -40,7 +40,7 @@
             paginatedPosts.forEach(post => {
                 const postDiv = document.createElement('div');
                 postDiv.classList.add('post');
-                postDiv.innerHTML = `<h2>${post.title}</h2><p>${post.date}</p><p>${post.content.substring(0, 100)}...</p>`;
+                postDiv.innerHTML = `<h2><a href="${post.link}">${post.title}</a></h2><p>${post.date}</p><p>${post.content.substring(0, 100)}...</p>`;
                 blogPostsDiv.appendChild(postDiv);
             });
 
@@ -68,29 +68,5 @@
 
         displayPosts(currentPage);
     </script>
-</body>
-</html><!DOCTYPE html>
-<html lang="fi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogi</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <div class="navbar">
-        <a href="index.html">Etusivu</a>
-        <a href="about.html">Tietoja minusta</a>
-        <a href="blogi.html">Blogi</a>
-        <a href="palveluni.html">Palveluni</a>
-        <a href="contact.html">Yhteydenotto</a>
-    </div>
-    <div class="container">
-        <h1>Blogi</h1>
-        <ul>
-            <li><a href="blogipostaukset/postaus1.html"> 5.1.2025 Tervetuloa Blogiini</a></li>
-        </ul>
-    </div>
 </body>
 </html>
