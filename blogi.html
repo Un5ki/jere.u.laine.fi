@@ -17,6 +17,77 @@
     </div>
     <div class="container">
         <h1>Blogi</h1>
+        <div id="blog-posts"></div>
+        <div id="pagination"></div>
+    </div>
+    <script>
+        const posts = [
+            { title: "Tervetuloa Blogiini", date: "5.1.2025", content: "Tämä on ensimmäinen blogipostaus..." },
+            // Lisää tähän muut blogipostaukset
+        ];
+
+        const postsPerPage = 5;
+        let currentPage = 1;
+
+        function displayPosts(page) {
+            const start = (page - 1) * postsPerPage;
+            const end = start + postsPerPage;
+            const paginatedPosts = posts.slice(start, end);
+
+            const blogPostsDiv = document.getElementById('blog-posts');
+            blogPostsDiv.innerHTML = '';
+
+            paginatedPosts.forEach(post => {
+                const postDiv = document.createElement('div');
+                postDiv.classList.add('post');
+                postDiv.innerHTML = `<h2>${post.title}</h2><p>${post.date}</p><p>${post.content.substring(0, 100)}...</p>`;
+                blogPostsDiv.appendChild(postDiv);
+            });
+
+            displayPagination();
+        }
+
+        function displayPagination() {
+            const paginationDiv = document.getElementById('pagination');
+            paginationDiv.innerHTML = '';
+
+            const totalPages = Math.ceil(posts.length / postsPerPage);
+
+            for (let i = 1; i <= totalPages; i++) {
+                const pageLink = document.createElement('a');
+                pageLink.href = '#';
+                pageLink.innerText = i;
+                pageLink.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    currentPage = i;
+                    displayPosts(currentPage);
+                });
+                paginationDiv.appendChild(pageLink);
+            }
+        }
+
+        displayPosts(currentPage);
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogi</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Etusivu</a>
+        <a href="about.html">Tietoja minusta</a>
+        <a href="blogi.html">Blogi</a>
+        <a href="palveluni.html">Palveluni</a>
+        <a href="contact.html">Yhteydenotto</a>
+    </div>
+    <div class="container">
+        <h1>Blogi</h1>
         <ul>
             <li><a href="blogipostaukset/postaus1.html"> 5.1.2025 Tervetuloa Blogiini</a></li>
         </ul>
